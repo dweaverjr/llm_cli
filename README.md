@@ -1,8 +1,10 @@
 # llm-cli
 
 Lightweight terminal CLI for chatting with OpenAI-compatible LLMs. Streaming output, slash commands, token usage display.
-
 ## Setup
+
+I use uv to manage my virtual environments. Info here: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
+
 
 ```bash
 cp .env.example .env
