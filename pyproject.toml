@@ -1,0 +1,12 @@
+[project]
+name = "llm-cli"
+version = "0.1.0"
+description = "Lightweight CLI for chatting with OpenAI-compatible LLMs"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=2.38.0",
+    "prompt-toolkit>=3.0.52",
+    "python-dotenv>=1.1.1",
+    "tiktoken>=0.13.0",
+]
