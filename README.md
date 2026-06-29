@@ -12,6 +12,14 @@ uv sync
 uv run main.py
 ```
 
+## My Recommended VSCode Extensions
+
+[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+[Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+
+[Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+
 ## Commands
 
 | Command | Description |
