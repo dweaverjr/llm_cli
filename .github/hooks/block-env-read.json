@@ -1,0 +1,11 @@
+{
+    "hooks": {
+        "PreToolUse": [
+            {
+                "type": "command",
+                "command": "uv run .github/hooks/scripts/block_env_read.py",
+                "timeout": 5
+            }
+        ]
+    }
+}
