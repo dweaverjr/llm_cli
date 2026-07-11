@@ -42,6 +42,8 @@ def main() -> None:
 
     client = OpenAI()
 
+    print(client.models.list())
+
     completer = SlashCommandCompleter(["/exit", "/help", "/model"])
 
     session = PromptSession(history=InMemoryHistory(), completer=completer)
