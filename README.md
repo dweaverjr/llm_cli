@@ -29,8 +29,3 @@ uv run main.py
 | `/help` | Show available commands |
 | `/model <name>` | Switch model |
 | `/exit` | Quit |
-
-## TODO
-
-- [ ] Expand file structure from course
-- [ ] Add more slash commands for model switching, settings, etc.
