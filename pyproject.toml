@@ -8,4 +8,16 @@ dependencies = [
     "openai>=2.45.0",
     "prompt-toolkit>=3.0.52",
     "python-dotenv>=1.2.2",
+    "tenacity>=9.1.4",
 ]
+
+[tool.ruff.lint]
+select = ["ALL"]
+# These conflict with the formatter (ruff docs recommend disabling them when using select = ["ALL"]).
+# T201: print found - this is a CLI, print() is the UI, not a debug artifact. Revisit later.
+ignore = ["COM812", "ISC001", "T201"]
+
+[tool.ruff.format]
+# Needed for Markdown formatting support (e.g. system.md) in the Ruff extension.
+preview = true
+
