@@ -6,7 +6,6 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import PurePath
-from typing import Any
 
 READ_TOOLS = {"read_file", "grep_search", "file_search"}
 BLOCK_REASON = (
@@ -24,7 +23,7 @@ def is_environment_file(value: object) -> bool:
     return filename == ".env" or filename.startswith(".env.")
 
 
-def contains_environment_file(value: Any) -> bool:
+def contains_environment_file(value: object) -> bool:
     """Recursively find protected file paths in tool input."""
     if isinstance(value, dict):
         return any(contains_environment_file(item) for item in value.values())
